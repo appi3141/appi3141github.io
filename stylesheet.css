@@ -2,8 +2,9 @@
   margin-left: 20px;
 }
 .logo-1 {
-  color: #02ccba;
+  color: #gray;
   font-size: 40px;
+  border-bottom: 2px solid #dee7ec
 }
 .syoukai {
   font-size: 30px;
