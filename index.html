@@ -23,13 +23,21 @@
         <p class="syokuin">大塚　恋 <a href="https://instagram.com/re___n71?igshid=db0tmzwl0hmm">大塚恋のインスタ</a></p>
         <p　class="setumei">【説明】<br>彼女の人生も特殊なものだ。だが、頑張っている。さようなら。</p>
       </div>
-      <div class="map" style="width:620px; height:400px">
-      </div>
+            <div id="map" style="width:620px; height:400px"></div>
+
+      <script type="text/javascript">
+      function initMap() {
+        var opts = {
+          zoom: 15,
+          center: new google.maps.LatLng(35.1239654, 136.9417741)
+        };
+        var map = new google.maps.Map(document.getElementById("map"), opts);
+      }
+      </script>
+
+      <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0RCygSm4JhqJQTzQLDsuBmcXiLBxFqZo&callback=initMap">
+      </script>
     </div>
-    
-    <script async defer
-      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC0RCygSm4JhqJQTzQLDsuBmcXiLBxFqZo&callback=initMap">
-    </script>
-    
   </body>
 </html>
